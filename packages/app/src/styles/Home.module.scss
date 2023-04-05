@@ -1,0 +1,7 @@
+$defaultColor: blue;
+.main {
+  background-color: cyan;
+  .box {
+    color: $defaultColor;
+  }
+}

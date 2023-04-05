@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.scss'
 import { getData } from '@react-zyu-admin/utils'
+import { Test } from '@react-zyu-admin/components'
+
 export default function Home() {
   return (
     <>
@@ -11,7 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div>{ JSON.stringify(getData()) }</div>
+        <div className={styles.box}>{ JSON.stringify(getData()) }</div>
+        <Test />
       </main>
     </>
   )
